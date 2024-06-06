@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textVaccinationHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vaccination:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerChildren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textVaccinationHeader" />
+
+    <Spinner
+        android:id="@+id/spinnerVaccines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerChildren"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etInjectionDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="8dp"
+        android:layout_below="@id/spinnerVaccines"
+        android:paddingEnd="8dp"
+        android:background="@drawable/edit_text_style"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:hint="Injection Date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etNextFollowupDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="8dp"
+        android:layout_below="@id/etInjectionDate"
+        android:paddingEnd="8dp"
+        android:background="@drawable/edit_text_style"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:hint="Next Follow-up Date"
+        android:inputType="date"/>
+    <Button
+        android:id="@+id/btnSaveVaccination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background"
+        android:layout_below="@id/etNextFollowupDate"
+        android:text="View Recode"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>

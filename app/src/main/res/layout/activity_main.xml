@@ -1,0 +1,75 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textChildNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register From"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_child_id"
+        android:textColor="@color/black"
+        android:layout_below="@id/textChildNameHeader"
+        android:text="Child Name"/>
+
+    <EditText
+        android:id="@+id/etChildName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="8dp"
+        android:layout_below="@id/text_child_id"
+        android:paddingEnd="8dp"
+        android:background="@drawable/edit_text_style"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:hint="Child Name" />
+
+    <TextView
+        android:id="@+id/text_Birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/etChildName"
+        android:text="Date of Birth"/>
+
+    <EditText
+        android:id="@+id/etBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="8dp"
+        android:layout_below="@id/text_Birthday"
+        android:paddingEnd="8dp"
+        android:background="@drawable/edit_text_style"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:hint="date of birth"
+        tools:ignore="DuplicateIds" />
+
+    <Button
+        android:id="@+id/btnSaveChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background"
+        android:layout_below="@id/etBirthday"
+        android:text="Register"
+        android:layout_marginBottom="16dp"/>
+
+
+</LinearLayout>
